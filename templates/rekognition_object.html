@@ -1,0 +1,96 @@
+{% extends 'layout/base.html' %}
+
+{% block title %} TRANG CHU {% endblock %}
+
+{% block content %}
+
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<body>
+
+<!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-items owl-carousel">
+             <div class="single-hero-items set-bg" data-setbg="static/img/giaothong.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1><font color="white">Phân tích giao thông</font></h1>
+                        </div>
+                        <div class="col-sm-5">
+                           <h5 class="text-white">Kết quả là cơ sở dữ liệu để bạn căn cứ phục vụ cho công việc học tập.</h5></br>
+                 <h5 class="text-white">  Có khả năng nhận biết loại phương tiện và số lượng phương tiện trong ảnh từ camera để bạn kịp thời có điều hướng kịp thời.
+                  </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+<h1 class="text-center text-danger">REKOGNITION-TRAFFIC</h1>
+<div style="text-align: center">
+<img src="{{ "static/images/"+avatar }}">
+    <p>{{avatar}}</p>
+</div>
+<table style="width:100%">
+  <tr>
+    <th class="text-center text-danger">Label</th>
+    <th class="text-center text-danger"> Số đối tượng</th>
+  </tr>
+    {%for i in rekog %}
+  <tr>
+    <td class="text-center">{{i[0]}}</td>
+    <td class="text-center">{{i[1]}}</td>
+  </tr>
+    {%endfor%}
+</table>
+</br></br>
+  <h3 class="text-center text-info"><i class="material-icons ">star</i> Xem thêm chức năng khác <i class="material-icons ">star</i> </h3>
+<!-- Banner Section Begin -->
+    <div class="banner-section spad">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img width="250px" height="250px" src="static/img/baoho.jpg" alt="">
+                        <div class="inner-text">
+                            <a href="/baoho"><h4>Bảo hộ</h4></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img width="250px" height="250px" src="static/img/khuonmatnam.jpg" alt="">
+                        <div class="inner-text">
+                            <a href="/khuonmat"><h4>Khuôn mặt</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+  <!-- Js Plugins -->
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-ui.min.js"></script>
+    <script src="static/js/jquery.countdown.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/jquery.zoom.min.js"></script>
+    <script src="static/js/jquery.dd.min.js"></script>
+    <script src="static/js/jquery.slicknav.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>
+{% endblock %}

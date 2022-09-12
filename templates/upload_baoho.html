@@ -1,0 +1,19 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<body>
+<h1 class="text-center text-danger">WELCOME TO REKOGNITION-PROTECTIVE EQUIPMENT</h1>
+<div style="text-align: center">
+<form method="post" action="/uploadbaoho" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
+</div>
+</body>
+{% endblock %}

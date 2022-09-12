@@ -1,0 +1,90 @@
+{% extends 'layout/base.html' %}
+
+{% block title %} TRANG CHU {% endblock %}
+
+{% block content %}
+<body>
+<!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-items owl-carousel">
+            <div class="single-hero-items set-bg" data-setbg="static/img/khuonmatnu.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1><font color="white">Phân tích khuôn mặt</font></h1>
+                            <a href="/khuonmat" class="primary-btn">Select Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-items set-bg" data-setbg="static/img/giaothong.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1><font color="white">Phân tích giao thông</font></h1>
+                            <a href="/object" class="primary-btn">Select Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-items set-bg" data-setbg="static/img/bhld.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h1>Phân tích sử dụng bảo hộ</h1>
+                            <a href="/baoho" class="primary-btn">Select Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Banner Section Begin -->
+    <div class="banner-section spad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img width="250px" height="250px" src="static/img/khuonmatnam.jpg" alt="">
+                        <div class="inner-text">
+                            <a href="/khuonmat"><h4>Khuôn mặt</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img width="250px" height="250px" src="static/img/phuongtien.png" alt="">
+                        <div class="inner-text">
+                            <a href="/object"><h4>Giao thông</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img width="250px" height="250px" src="static/img/baoho.jpg" alt="">
+                        <div class="inner-text">
+                            <a href="/baoho"><h4>Bảo hộ</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Js Plugins -->
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-ui.min.js"></script>
+    <script src="static/js/jquery.countdown.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/jquery.zoom.min.js"></script>
+    <script src="static/js/jquery.dd.min.js"></script>
+    <script src="static/js/jquery.slicknav.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>
+{% endblock %}
